@@ -1,0 +1,106 @@
+{
+  "LogisticRegression": {
+    "precision": 0.5008,
+    "recall": 0.8048,
+    "f1": 0.6174,
+    "roc_auc": 0.8482,
+    "avg_precision": 0.665,
+    "confusion_matrix": [
+      [
+        735,
+        300
+      ],
+      [
+        73,
+        301
+      ]
+    ],
+    "fit_time_sec": 0.06
+  },
+  "RandomForest": {
+    "precision": 0.5414,
+    "recall": 0.7701,
+    "f1": 0.6358,
+    "roc_auc": 0.8446,
+    "avg_precision": 0.6589,
+    "confusion_matrix": [
+      [
+        791,
+        244
+      ],
+      [
+        86,
+        288
+      ]
+    ],
+    "fit_time_sec": 1.36
+  },
+  "XGBoost": {
+    "precision": 0.5401,
+    "recall": 0.7567,
+    "f1": 0.6303,
+    "roc_auc": 0.8381,
+    "avg_precision": 0.6434,
+    "confusion_matrix": [
+      [
+        794,
+        241
+      ],
+      [
+        91,
+        283
+      ]
+    ],
+    "fit_time_sec": 0.37
+  },
+  "top_shap_features": [
+    [
+      "cat__Contract_Month-to-month",
+      0.6778
+    ],
+    [
+      "num__tenure",
+      0.4137
+    ],
+    [
+      "num__MonthlyCharges",
+      0.3121
+    ],
+    [
+      "num__avg_monthly_spend_ratio",
+      0.2662
+    ],
+    [
+      "cat__OnlineSecurity_No",
+      0.2397
+    ],
+    [
+      "num__TotalCharges",
+      0.2051
+    ],
+    [
+      "cat__InternetService_Fiber optic",
+      0.1934
+    ],
+    [
+      "cat__PaymentMethod_Electronic check",
+      0.1611
+    ],
+    [
+      "cat__TechSupport_No",
+      0.1523
+    ],
+    [
+      "num__contract_risk",
+      0.1373
+    ]
+  ],
+  "business_impact": {
+    "total_test_customers": 1409,
+    "actual_churners_in_test": 374,
+    "churners_correctly_flagged": 283,
+    "recall_at_default_threshold": 0.7567,
+    "avg_monthly_charge": 64.09,
+    "estimated_annual_revenue_at_risk_correctly_flagged": 217645.76
+  }
+}
