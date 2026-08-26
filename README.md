@@ -1,4 +1,4 @@
-# ChurnGuard — End-to-End Customer Churn Prediction System
+# ChurnGuard : End-to-End Customer Churn Prediction System
 
 A complete, deployed data science project: from raw data to a served, monitored
 prediction API. Built to demonstrate the full DS/ML lifecycle — not just a
