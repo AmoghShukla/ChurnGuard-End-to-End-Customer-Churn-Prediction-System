@@ -241,29 +241,6 @@ Full interactive docs (Swagger UI) at `/docs` once the API is running.
 
 ---
 
-## What's deliberately *not* in scope (and why, if asked)
-
-- **Real-time streaming retraining** — out of scope for a portfolio project;
-  documented as a natural extension (e.g. scheduled retraining job + model
-  registry) rather than built, since a one-off training script is the right
-  scope for this dataset's size and update frequency.
-- **A/B testing the model in production** — no live production traffic to
-  test against; the monitoring dashboard's drift tracking is the honest
-  substitute — it shows how you'd *detect* the need for retraining, which is
-  the actually-testable claim here.
-- **SMOTE** — considered and explicitly rejected in favor of class weighting;
-  see `train.py` docstring for the reasoning, since "why not SMOTE" is a
-  common follow-up question.
-
----
-
-## Resume line this project supports
-
-> Built and deployed an end-to-end customer churn prediction system
-> (XGBoost, FastAPI, Docker, PostgreSQL) achieving 75.7% recall on at-risk
-> customers with SHAP-based per-prediction explainability; designed a
-> monitoring dashboard to track prediction-score drift in production.
-
 ## Tech stack
 
 Python · pandas · scikit-learn · XGBoost · SHAP · FastAPI · Pydantic ·
