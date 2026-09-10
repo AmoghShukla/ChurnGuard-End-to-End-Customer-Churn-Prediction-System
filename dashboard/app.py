@@ -36,7 +36,7 @@ try:
         with col:
             st.subheader(name)
             st.metric("ROC-AUC", m["roc_auc"])
-            st.metric("Recall (Churn) ", m["recall"])
+            st.metric("Recall (Churn)", m["recall"])
             st.metric("Precision (Churn)", m["precision"])
             st.metric("F1", m["f1"])
 
