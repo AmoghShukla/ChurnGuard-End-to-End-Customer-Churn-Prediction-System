@@ -15,92 +15,92 @@
         301
       ]
     ],
-    "fit_time_sec": 0.06
+    "fit_time_sec": 0.12
   },
   "RandomForest": {
-    "precision": 0.5414,
-    "recall": 0.7701,
-    "f1": 0.6358,
-    "roc_auc": 0.8446,
-    "avg_precision": 0.6589,
+    "precision": 0.5294,
+    "recall": 0.7941,
+    "f1": 0.6353,
+    "roc_auc": 0.8448,
+    "avg_precision": 0.6586,
     "confusion_matrix": [
       [
-        791,
-        244
+        771,
+        264
       ],
       [
-        86,
-        288
+        77,
+        297
       ]
     ],
-    "fit_time_sec": 1.36
+    "fit_time_sec": 0.83
   },
   "XGBoost": {
-    "precision": 0.5401,
-    "recall": 0.7567,
-    "f1": 0.6303,
-    "roc_auc": 0.8381,
-    "avg_precision": 0.6434,
+    "precision": 0.5301,
+    "recall": 0.754,
+    "f1": 0.6225,
+    "roc_auc": 0.8369,
+    "avg_precision": 0.6442,
     "confusion_matrix": [
       [
-        794,
-        241
+        785,
+        250
       ],
       [
-        91,
-        283
+        92,
+        282
       ]
     ],
-    "fit_time_sec": 0.37
+    "fit_time_sec": 0.6
   },
   "top_shap_features": [
     [
       "cat__Contract_Month-to-month",
-      0.6778
+      0.6774
     ],
     [
       "num__tenure",
-      0.4137
+      0.4083
     ],
     [
       "num__MonthlyCharges",
-      0.3121
+      0.328
     ],
     [
       "num__avg_monthly_spend_ratio",
-      0.2662
-    ],
-    [
-      "cat__OnlineSecurity_No",
-      0.2397
-    ],
-    [
-      "num__TotalCharges",
-      0.2051
+      0.263
     ],
     [
       "cat__InternetService_Fiber optic",
-      0.1934
+      0.2433
     ],
     [
-      "cat__PaymentMethod_Electronic check",
-      0.1611
+      "cat__OnlineSecurity_No",
+      0.2291
+    ],
+    [
+      "num__TotalCharges",
+      0.202
     ],
     [
       "cat__TechSupport_No",
-      0.1523
+      0.1609
     ],
     [
-      "num__contract_risk",
-      0.1373
+      "cat__PaymentMethod_Electronic check",
+      0.1588
+    ],
+    [
+      "cat__Contract_Two year",
+      0.1407
     ]
   ],
   "business_impact": {
     "total_test_customers": 1409,
     "actual_churners_in_test": 374,
-    "churners_correctly_flagged": 283,
-    "recall_at_default_threshold": 0.7567,
+    "churners_correctly_flagged": 282,
+    "recall_at_default_threshold": 0.754,
     "avg_monthly_charge": 64.09,
-    "estimated_annual_revenue_at_risk_correctly_flagged": 217645.76
+    "estimated_annual_revenue_at_risk_correctly_flagged": 216876.69
   }
 }
