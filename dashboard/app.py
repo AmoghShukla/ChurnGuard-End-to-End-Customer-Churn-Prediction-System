@@ -61,7 +61,7 @@ except Exception as e:
 
 st.divider()
 
-# ---- Live prediction monitoring ----
+# ---- prediction monitoring ----
 st.header("Live Prediction Monitoring")
 try:
     recent = requests.get(f"{API_BASE_URL}/predictions/recent", params={"limit": 200}, timeout=5).json()
