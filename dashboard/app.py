@@ -25,7 +25,7 @@ st.set_page_config(page_title="ChurnGuard Monitor", layout="wide")
 
 st.title("ChurnGuard : Model Monitoring Dashboard")
 
-# ---- Training metrics ----
+# ---- Training ----
 st.header("Model Comparison (Training Time)")
 
 try:
