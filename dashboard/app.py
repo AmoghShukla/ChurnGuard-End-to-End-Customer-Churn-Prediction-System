@@ -27,6 +27,7 @@ st.title("ChurnGuard : Model Monitoring Dashboard")
 
 # ---- Training metrics ----
 st.header("Model Comparison (Training Time)")
+
 try:
     metrics = requests.get(f"{API_BASE_URL}/metrics", timeout=5).json()
     model_names = [k for k in metrics.keys() if k not in ("top_shap_features", "business_impact")]
