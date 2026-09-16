@@ -81,7 +81,7 @@ try:
             st.subheader("Prediction Score Distribution")
             fig2 = px.histogram(df, x="churn_probability", nbins=20)
             st.plotly_chart(fig2, use_container_width=True)
-            
+
         with col_b:
             st.subheader("Risk Tier Breakdown")
             tier_counts = df["risk_tier"].value_counts().reset_index()
@@ -90,6 +90,7 @@ try:
             st.plotly_chart(fig3, use_container_width=True)
 
         st.subheader("Prediction Volume Over Time")
+        
         df_sorted = df.sort_values("timestamp")
         fig4 = px.line(df_sorted, x="timestamp", y="churn_probability", markers=True)
         st.plotly_chart(fig4, use_container_width=True)
