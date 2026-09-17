@@ -90,8 +90,9 @@ try:
             st.plotly_chart(fig3, use_container_width=True)
 
         st.subheader("Prediction Volume Over Time")
-        
+
         df_sorted = df.sort_values("timestamp")
+        
         fig4 = px.line(df_sorted, x="timestamp", y="churn_probability", markers=True)
         st.plotly_chart(fig4, use_container_width=True)
 
