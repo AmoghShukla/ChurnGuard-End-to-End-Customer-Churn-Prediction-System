@@ -61,7 +61,7 @@ except Exception as e:
 
 st.divider()
 
-# ---- prediction monitoring ----
+# ---- prediction monitoring  ----
 st.header("Live Prediction Monitoring")
 try:
     recent = requests.get(f"{API_BASE_URL}/predictions/recent", params={"limit": 200}, timeout=5).json()
@@ -87,7 +87,7 @@ try:
             tier_counts = df["risk_tier"].value_counts().reset_index()
             tier_counts.columns = ["risk_tier", "count"]
             fig3 = px.pie(tier_counts, names="risk_tier", values="count")
-            
+
             st.plotly_chart(fig3, use_container_width=True)
 
         st.subheader("Prediction Volume Over Time")
