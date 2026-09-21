@@ -87,6 +87,7 @@ try:
             tier_counts = df["risk_tier"].value_counts().reset_index()
             tier_counts.columns = ["risk_tier", "count"]
             fig3 = px.pie(tier_counts, names="risk_tier", values="count")
+            
             st.plotly_chart(fig3, use_container_width=True)
 
         st.subheader("Prediction Volume Over Time")
