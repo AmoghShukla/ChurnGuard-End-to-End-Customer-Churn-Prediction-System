@@ -56,7 +56,6 @@ try:
     st.plotly_chart(fig, use_container_width=True)
 
 except Exception as e:
-    
     st.warning(f"Could not load training metrics from API ({API_BASE_URL}/metrics). "
                f"Make sure the API is running and train.py has been run. Error: {e}")
 
